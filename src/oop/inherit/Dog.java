@@ -5,10 +5,5 @@ public class Dog extends Animal{
 		this.age = age;
 		this.type = type;
 	}
-	public static void main(String[] args) {
-		Dog dog = new Dog(6,"푸들");
-		dog.eat();
-		dog.sleep();
-		dog.run();
-	}
+	
 }

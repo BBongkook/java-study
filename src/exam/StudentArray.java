@@ -1,6 +1,9 @@
 package exam;
 
 class Student{
+	Student(){
+		
+	}
 	String name;
 	int grade;
 	String schoolname;
