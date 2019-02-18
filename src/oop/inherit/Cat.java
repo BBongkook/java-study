@@ -7,14 +7,18 @@ public class Cat extends Animal{
 	}
 	
 	public static void main(String[] args) {
+		
 		Cat cat = new Cat(6,"샴");
 		cat.eat();
 		cat.sleep();
 		cat.run();
+		cat.jump();
 		Animal animal = new Dog(6,"푸들");
 		animal.eat();
 		animal.sleep();
 		animal.run();
+		animal.jump();
+		
 		
 		
 	}
