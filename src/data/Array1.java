@@ -7,7 +7,7 @@ public class Array1 {
 		// 선언은 데이터타입[] 변수명;
 		// 초기화나 대입은 변수명 = new 데이터타입[인덱스수];
 		int[] nums = new int[10];
-		nums[0] = 1;
+		nums[0] = 1; 
 		nums[9] = 2;
 		
 		
