@@ -29,7 +29,7 @@ public class CustomList {
 		CustomList cl = new CustomList();
 		System.out.println(cl.size());
 		cl.add("str");
-		cl.add("str");
+		cl.add("abc");
 		System.out.println(cl.size());
 		System.out.println(cl);
 	}
