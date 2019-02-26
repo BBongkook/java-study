@@ -26,19 +26,19 @@ class Dog{
 // name => 강아지1~강아지10, age= 1~10
 public class DogList {
 
-	public static void main(String[] argS) {
+	public static void main(String[] args) {
 		List<Dog> dl = new ArrayList<>();
-		
+
 		for(int i=0; i<10; i++) {
 			Dog d = new Dog();
-			dl.add(d);
 			d.setAge(i+1);
 			d.setName("강아지"+i);
+			dl.add(d);
 		}
 		
-		for(int i=0; i<10; i++) {
-			System.out.println(dl.get(i).getName());
-			System.out.println(dl.get(i).getAge());	
+		for(Dog d:dl) {
+			System.out.println(d.getName());
+			System.out.println(d.getAge());	
 		}
 	}
 }
