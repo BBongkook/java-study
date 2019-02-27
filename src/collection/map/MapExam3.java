@@ -28,7 +28,7 @@ public class MapExam3 {
 //		}
 		for(int i=0; i<10; i++) {
 			HashMap<String,Object> c = Cat.get(i);
-			System.out.println(c);
+			//System.out.println(c);
 		}
 	}
 }
