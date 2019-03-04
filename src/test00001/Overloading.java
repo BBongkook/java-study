@@ -25,9 +25,9 @@ class Person{
 public class Overloading {
 
 	public static void main(String[] args) {
-		Person man = new Person(900617, 1072004980);
-		Person woman = new Person(881027);
-		man.showInfo();
-		woman.showInfo();
+		Person p1 = new Person(900617, 1072004980);
+		Person p2 = new Person(881027);
+		p1.showInfo();
+		p2.showInfo();
 	}
 }
