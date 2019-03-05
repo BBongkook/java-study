@@ -61,7 +61,7 @@ class S extends F{
 }
 public class Test extends s{
 }
- 
+
 10. 다음중 오버라이딩의 설명으로 틀린 것은?(10)  
  1) 메서드명이 같아야 한다.
  2) 리턴타입은 상관이 없다.
