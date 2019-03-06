@@ -52,7 +52,11 @@ public class Execute {
 					}
 				}
 				if("3".equals(cmd)) {
-					
+					OrderBoardSerivce obs = new OrderBoardSerivce();
+					System.out.println("수정할 주문번호 : ");
+					int orderNum = scan.nextInt();
+					System.out.println("수정할 주소 : ");
+					String buyAdr = scan.nextLine();
 				}
 				if("4".equals(cmd)) {
 					OrderBoardSerivce obs = new OrderBoardSerivce();
