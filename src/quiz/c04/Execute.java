@@ -38,7 +38,8 @@ public class Execute {
 						String strBuyer = scan.nextLine();
 						obvo.setBuyer(strBuyer);
 						//obList.add(obvo);
-						obs.selectBoard(obvo);
+						obList = obs.selectBoard(obvo);
+						System.out.println(obList);
 					}
 					if("2".equals(sel)) {
 						OrderBoardSerivce obs = new OrderBoardSerivce();
@@ -46,14 +47,18 @@ public class Execute {
 						String reqName = scan.nextLine();
 						obvo.setReqName(reqName);
 						//obList.add(obvo);
-						obs.selectBoard(obvo);
+						obList = obs.selectBoard(obvo);
+						System.out.println(obList);
 					}
 				}
 				if("3".equals(cmd)) {
 					
 				}
 				if("4".equals(cmd)) {
-					
+					OrderBoardSerivce obs = new OrderBoardSerivce();
+					System.out.print("삭제할 주문번호 : ");
+					int orderNum = scan.nextInt();
+					obs.deleteBoard(orderNum);
 				}
 				if("q".equals(cmd)) {
 					

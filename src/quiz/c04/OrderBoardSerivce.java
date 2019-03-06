@@ -7,8 +7,6 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import quiz.c04.DBCon;
-
 public class OrderBoardSerivce {
 	
 	public List<OrderBoardVO> selectBoard(OrderBoardVO obvo){
@@ -49,5 +47,28 @@ public class OrderBoardSerivce {
 			DBCon.close();
 		}
 		return null;
+	}
+	public void updateBoard(int ordernum, String buyAdr) {
+		String sql = "update set where";
+		try {
+			PreparedStatement ps = DBCon.getCon().prepareStatement(sql);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	public void deleteBoard(int ordernum) {
+		String sql = "delete from order_board where ordernum=?";
+		try {
+			PreparedStatement ps = DBCon.getCon().prepareStatement(sql);
+			ps.setInt(1, ordernum);
+			int cnt = ps.executeUpdate();
+			if(cnt==1) {
+				System.out.println("삭제 성공");
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 }
