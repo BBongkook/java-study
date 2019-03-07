@@ -39,12 +39,12 @@ public class MapExam {
 		map4.put("나이","513413");
 		map4.put("주소","강원");
 
-		Iterator<String> it = map.keySet().iterator();
-		
-		while(it.hasNext()) {
-			String key = it.next();
-			System.out.println(map.get(key));
-		}
+//		Iterator<String> it = map.keySet().iterator();
+//		
+//		while(it.hasNext()) {
+//			String key = it.next();
+//			System.out.println(map.get(key));
+//		}
 	
 
 		

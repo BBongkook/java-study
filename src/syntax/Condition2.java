@@ -2,7 +2,7 @@ package syntax;
 
 public class Condition2 {
 	public static String getStr() {
-		return "ABC";
+		return "ABC"; 
 	}
 	public static void main(String[] args) {
 		int a = 4;
